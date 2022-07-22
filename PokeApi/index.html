@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Consumo PokeApi</title>
+  </head>
+  <body>
+    <div id="pokedex-container">
+      <img src="" id="pokemon" />
+      <h1 class="pokemon-data">
+        <span class="pokemon-number"></span> -
+        <span class="pokemon-name"></span>
+      </h1>
+      <form class="form">
+        <input
+          type="search"
+          class="input-search"
+          placeholder="Nome ou numero"
+          required
+        />
+      </form>
+      <div class="buttons">
+        <button class="button btn-prev">Prev &lt;</button>
+        <button class="button btn-next">Next &gt;</button>
+      </div>
+      <img src="./img/pokedex.png" id="pokedex" />
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

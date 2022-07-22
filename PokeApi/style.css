@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#pokedex-container {
+  display: inline-block;
+  padding: 15px;
+  position: relative;
+}
+#pokedex {
+  width: 100%;
+  max-width: 425px;
+}
+#pokemon {
+  position: absolute;
+  bottom: 48%;
+  left: 33%;
+  height: 18%;
+}
+.pokemon-data {
+  position: absolute;
+  font-weight: 600;
+  color: #aaa;
+  bottom: 41%;
+  left: 40%;
+  font-size: clamp(8px, 25vw, 25px);
+}
+.pokemon-name {
+  color: #3a444d;
+  text-transform: capitalize;
+}
+form {
+  position: absolute;
+  width: 65%;
+  bottom: 30%;
+  left: 15%;
+}
+.input-search {
+  width: 100%;
+  padding: 4%;
+  border: 2px solid#333;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #3e444d;
+  font: clamp(8px, 5vw, 1rem);
+  box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+}
+.buttons {
+  position: absolute;
+  bottom: 10%;
+  left: 13%;
+  width: 65%;
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  width: 50%;
+  padding: 4%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: #fff;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+/*------------Efeito botão click---------------*/
+.button:active {
+  box-shadow: inset -4px 4px 0 #222;
+  font-size: 0.9rem;
+}
